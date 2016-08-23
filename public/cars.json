@@ -1,11 +1,8 @@
-import Ember from 'ember';
-
-/*
-var cars = [
+[
   {
     "id": 1,
     "make": "Honda",
-    "model": "Accord",
+    "model": "Civic",
     "year": "2007"
   },
   {
@@ -19,14 +16,5 @@ var cars = [
     "make": "Ford",
     "model": "F150 Raptor",
     "year": "2012"
-  },
-];
-*/
-
-export default Ember.Route.extend({
-  model: function() {
-    return Ember.$.getJSON('cars.json').then(function(data) {
-      return data;
-    });
   }
-});
+]
